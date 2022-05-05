@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form - Codeauthor</title>
+    <link rel="stylesheet" href="css/main.css" media="all">
+</head>
+<body>
+    <main>
+        <div class="wraper">
+            <form action="#" onsubmit="sendEmail();">
+                <h3>Get in touch</h3>
+                <label for="fname">First Name:</label>
+                <input 
+                type="text" 
+                name="fname" 
+                id="fname"
+                placeholder="First Name"
+                required
+                />
+                <label for="email">Email:</label>
+                <input
+                type="email" 
+                name="email" 
+                id="email" 
+                placeholder="email"
+                required
+                />
+                <label for="phone">Number</label>
+                <input 
+                type="text" 
+                name="phone" 
+                id="phone"
+                placeholder="Phone no."
+                required
+                />
+                <label for="msg">message</label>
+                <textarea name="msg" id="msg" rows="4" placeholder="How can we help you" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
